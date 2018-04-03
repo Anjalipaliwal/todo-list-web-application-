@@ -1,0 +1,41 @@
+<html >
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="angular.js"></script>
+        <script src="angular-route.js"></script>
+        <script src="app.js"></script>
+        <script src="firebase.js"></script>
+
+    <script>
+    var config = {
+    apiKey: "AIzaSyASx4bvjiwai1t5JzLqfgy5j4h3w-HALiA",
+    authDomain: "fire-81864.firebaseapp.com",
+    databaseURL: "https://fire-81864.firebaseio.com",
+    projectId: "fire-81864",
+    storageBucket: "fire-81864.appspot.com",
+    messagingSenderId: "188864158860"
+  };
+
+  firebase.initializeApp(config);
+</script>
+<script src="angularfire.js"></script>
+
+        <style>
+        .done{
+            text-decoration: line-through;
+        }
+        </style>
+
+    </head>
+    <body background="books.jpg" ng-app="todo">
+      
+      <ng-view>
+          
+      </ng-view>
+
+
+   
+ 
+    </body>
+</html>
